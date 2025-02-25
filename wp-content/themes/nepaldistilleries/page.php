@@ -5,7 +5,7 @@
             the_post(); 
     ?>
 
-        <?php the_content(); ?>
+        <?php //the_content(); ?>
 
     <?php
         endwhile;
