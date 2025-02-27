@@ -22,7 +22,7 @@
                 $counter++; // Increment counter each loop iteration
                 $alignment = ($counter % 2 == 0) ? 'text-right' : 'text-left bg-light'; // Determine alignment based on even or odd count
     ?>
-    <div class="banner-content h-100 d-md-flex align-items-center justify-content-between <?php echo $alignment; ?>">
+    <div id="brand<?php echo $counter; ?>" class="banner-content h-100 d-md-flex align-items-center justify-content-between <?php echo $alignment; ?>">
         <?php if($counter % 2 == 0): ?>
             <div class="img-wrapper position-relative" data-aos="fade-right">
                 <img src="<?php the_sub_field('image'); ?>" alt="">
