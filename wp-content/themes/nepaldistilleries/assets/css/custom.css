@@ -125,3 +125,12 @@ body .product-info  .theme-btn-two{
     background: #161616;
     color: #fff;
 }
+
+
+
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  #home-banner {
+    margin-left: 80px;/* Adjust the value to your preference */
+  }
+}

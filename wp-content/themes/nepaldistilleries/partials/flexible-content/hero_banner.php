@@ -21,8 +21,7 @@
                         <div class="container">
                             <div class="row align-items-end">
                                 <div class="col-xl-8 col-md-6">
-                                    <div class="product-text text-white">
-
+                                    <div id="home-banner" class="product-text text-white">
                                         <h2 class="font-recoleta display-3 lh-base text-white"><?php the_sub_field('title');?>
                                         </h2>
                                         <p class="text-lg mb-50 lg-mb-30"><?php the_sub_field('sub_title');?>

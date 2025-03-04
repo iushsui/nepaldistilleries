@@ -3,7 +3,7 @@
     Portfolio Gallery Nine
 =====================================================
 -->
-<div class="portfolio-gallery-nine mt-150 lg-mt-100" data-aos="fade-up">
+<div class="portfolio-gallery-nine border-top mt-100 lg-mt-100 pt-50" data-aos="fade-up">
 <div class="container">
     <div class="row align-items-center justify-content-between">
         <div class="col-xxl-5 col-xl-6 col-lg-5 col-md-7 col-sm-9">

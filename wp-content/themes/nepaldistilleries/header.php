@@ -69,7 +69,7 @@
         //                            var_dump($logo);
         //                            exit();
                         } ?>
-					<div class="logo"><a href="<?= get_home_url(); ?>"><img src="<?= $logo ?>" alt="" width="90"></a>
+					<div class="logo"><a href="<?= get_home_url(); ?>"><img src="<?= $logo ?>" alt="" width="70"></a>
 					</div>
 					<nav class="navbar navbar-expand-lg">
 						<button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse"

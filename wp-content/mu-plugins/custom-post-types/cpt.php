@@ -38,13 +38,13 @@ function add_taxonomy( $name, $post_type, $args = array() ) {
 }
 
 
-add_post_type( 'blog', [
+add_post_type( 'news-events', [
 	'public'      => true,
 	//    'menu_position' => 5,
-	'label'       => 'Blogs',
+	'label'       => 'News & Events',
 	'menu_icon'   => 'dashicons-welcome-write-blog',
-	'labels'      => [ 'add_new_item' => "Add New Blog" ],
-	'taxonomies'  => [ 'blog-category','Categories' ],
+	'labels'      => [ 'add_new_item' => "Add New News/Events" ],
+	'taxonomies'  => [ 'news-events-category','Categories' ],
 	'taxonomies'  => array('featured', 'post_tag'),
 	'supports'    => [ 'title', 'editor', 'thumbnail', 'author' ],
 	'has_archive' => true
@@ -52,35 +52,35 @@ add_post_type( 'blog', [
 
 
 $labels = array(
-    'name'                       => _x( 'Blogs Categories', 'taxonomy general name' ),
-    'singular_name'              => _x( 'Blog Category', 'taxonomy singular name' ),
-    'search_items'               => __( 'Search Blogs Categories' ),
-    'popular_items'              => __( 'Popular Blogs Categories' ),
-    'all_items'                  => __( 'All Blogs Categories' ),
+    'name'                       => _x( 'News & Events Categories', 'taxonomy general name' ),
+    'singular_name'              => _x( 'News/Events Category', 'taxonomy singular name' ),
+    'search_items'               => __( 'Search News & Events Categories' ),
+    'popular_items'              => __( 'Popular News & Events Categories' ),
+    'all_items'                  => __( 'All News & Events Categories' ),
     'parent_item'                => null,
     'parent_item_colon'          => null,
-    'edit_item'                  => __( 'Edit Blogs Category' ),
-    'update_item'                => __( 'Update Blogs Category' ),
-    'add_new_item'               => __( 'Add New Blogs Category' ),
-    'new_item_name'              => __( 'New Blogs Category Name' ),
-    'separate_items_with_commas' => __( 'Separate Blogs categories with commas' ),
-    'add_or_remove_items'        => __( 'Add or remove Blogs categories' ),
-    'choose_from_most_used'      => __( 'Choose from the most used Blogs categories' ),
-    'menu_name'                  => __( 'Blogs Categories' ),
+    'edit_item'                  => __( 'Edit News & Events Category' ),
+    'update_item'                => __( 'Update News & Events Category' ),
+    'add_new_item'               => __( 'Add New News & Events Category' ),
+    'new_item_name'              => __( 'New News & Events Category Name' ),
+    'separate_items_with_commas' => __( 'Separate News & Events categories with commas' ),
+    'add_or_remove_items'        => __( 'Add or remove News & Events categories' ),
+    'choose_from_most_used'      => __( 'Choose from the most used News & Events categories' ),
+    'menu_name'                  => __( 'News & Events Categories' ),
 );
 
-add_taxonomy( "blog-category", 'blog', [
+add_taxonomy( "news-events-category", 'news-events', [
 	'labels'       => $labels,
     'hierarchical' => true
 ] );
 
 
-add_post_type( 'service', [
+add_post_type( 'brand', [
 	'public'      => true,
 	//    'menu_position' => 5,
-	'label'       => 'Services',
+	'label'       => 'Brands',
 	'menu_icon'   => 'dashicons-admin-tools',
-	'labels'      => [ 'add_new_item' => "Add New Service" ],
+	'labels'      => [ 'add_new_item' => "Add New Brand" ],
 	// 'taxonomies'  => [ 'work-category','Categories' ],
 	// 'taxonomies'  => array('featured'),
 	'supports'    => [ 'title', 'editor', 'thumbnail','author' ],
@@ -98,7 +98,7 @@ function set_default_object_terms_203962( $post_id, $post ) {
     if ( 'publish' === $post->post_status ) {
         $defaults = array(
             //'your_taxonomy_id' => array( 'your_term_slug', 'your_term_slug' )
-            'blog-category' => array( 'uncategorized' ),
+            'news-events-category' => array( 'Uncategorized' ),
             // 'work-category' => array( 'uncategorized' ),
             // 'monkey-faces' => array( 'see-no-evil' ),
             );

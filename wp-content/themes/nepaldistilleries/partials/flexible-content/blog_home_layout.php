@@ -14,7 +14,7 @@
 
             <?php 
                 $args = [
-                    'post_type'         => 'blog',
+                    'post_type'         => 'news-events',
                     'post_status'       => 'publish',
                     'posts_per_page'    => 2
                 ];
@@ -42,7 +42,7 @@
                             //     ) );                   
                         ?>
                         <?php 
-                            $terms = get_the_terms( $post->ID, 'blog-category' );
+                            $terms = get_the_terms( $post->ID, 'news-events-category' );
                             $term= [];
                             if ( !empty( $terms ) ){
 
