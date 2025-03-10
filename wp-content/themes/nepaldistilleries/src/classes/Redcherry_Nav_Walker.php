@@ -35,11 +35,11 @@ class Redcherry_Nav_Walker extends Walker_Nav_Menu {
 
 		
 		if ( $args->walker->has_children ) {
-			$output .= "<a href='" . $item->url . "' class='nav-link custom-class'><span>";			//this is added to menu which has children
+			$output .= "<a href='" . $item->url . "' class='nav-link custom-class'><span class='font-cinzel-black'>";			//this is added to menu which has children
 		} elseif ( $depth === 0 ) {
-			$output .= "<a href='" . $item->url . "' class='nav-link'><span>";			//this is added to to menu which has no children
+			$output .= "<a href='" . $item->url . "' class='nav-link'><span class='font-cinzel-black'>";			//this is added to to menu which has no children
 		} else {
-			$output .= "<a href='" . $item->url . "' class='dropdown-item'><span>";			//this is added to children
+			$output .= "<a href='" . $item->url . "' class='dropdown-item'><span class='font-cinzel-black'>";			//this is added to children
 		}
 
 		$output .= $item->title;

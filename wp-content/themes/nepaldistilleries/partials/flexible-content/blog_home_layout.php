@@ -7,7 +7,7 @@
 <div class="blog-section-seven mb-110 lg-mt-80 mt-100">
     <div class="container">
         <div class="title-style-thirteen text-center pb-35 lg-pb-10" data-aos="fade-up">
-            <h2 class="title fw-bold"><?php the_sub_field('heading'); ?></h2>
+            <h2 class="fw-bold font-recoleta"><?php the_sub_field('heading'); ?></h2>
         </div> <!-- /.title-style-thirteen -->
 
         <div class="row gx-xl-5">

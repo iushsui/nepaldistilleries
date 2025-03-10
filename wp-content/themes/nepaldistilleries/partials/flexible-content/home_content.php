@@ -8,8 +8,8 @@
     <div class="row align-items-xl-center">
         <div class="col-xxl-6 col-xl-7 col-lg-5" data-aos="fade-right">
             <div class="title-style-thirteen">
-                <div class="upper-title"><?php the_sub_field('before_title'); ?></div>
-                <h2 class="title fw-bold"><?php the_sub_field('title'); ?></h2>
+                <div class="upper-title font-cinzel-black"><?php the_sub_field('before_title'); ?></div>
+                <h2 class="fw-bold font-recoleta"><?php the_sub_field('title'); ?></h2>
             </div> <!-- /.title-style-thirteen -->
         </div>
         <div class="col-xl-5 col-lg-6 ms-auto" data-aos="fade-left">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
             </div> -->
-            <p class="text-lg"><?php the_sub_field('paragraph'); ?></p>
+            <p class="text-md"><?php the_sub_field('paragraph'); ?></p>
         </div>
     </div>
 </div>

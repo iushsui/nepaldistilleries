@@ -3,14 +3,14 @@
             Vcamp Fancy Banner Eleven
         =====================================================
         -->
-        <div class="fancy-banner-eleven dark-style " style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/testimonial-bg-2.jpeg');">
+        <!-- <div class="fancy-banner-eleven dark-style " style="background-image: url('<?php //echo get_template_directory_uri(); ?>/assets/images/testimonial-bg-2.jpeg');">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-7" data-aos="fade-right">
                         <div class="title-style-thirteen white-vr">
                             <div class="upper-title">Subscirbe Now</div>
                             <h2 class="title fw-bold">Subscribe to Our newsletter.</h2>
-                        </div> <!-- /.title-style-thirteen -->
+                        </div> /.title-style-thirteen
                     </div>
                     <div class="col-lg-5" data-aos="fade-left">
                         <div class="form-wrapper">
@@ -19,11 +19,11 @@
                                 <button><i class="bi bi-envelope"></i></button>
                             </form>
                             <div class="info">Already a member? <a href="sign-in.html">Sign in.</a></div>
-                        </div> <!-- /.form-wrapper -->
+                        </div> /.form-wrapper
                     </div>
                 </div>
             </div>
-        </div> <!-- /.fancy-banner-eleven -->
+        </div> /.fancy-banner-eleven -->
 
 
 
@@ -94,7 +94,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-4 order-lg-2 mb-15">
-                            <p class="copyright text-center">Copyright @<?php echo date('Y'); ?> Red Cherry Coffee Roastery</p>
+                            <p class="copyright text-center">Copyright @<?php echo date('Y'); ?> The Nepal Distilleries Pvt. Ltd.</p>
                         </div>
                     </div>
                 </div>

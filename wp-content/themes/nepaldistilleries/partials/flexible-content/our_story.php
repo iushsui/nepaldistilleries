@@ -8,7 +8,8 @@
         <div class="row">
             <div class="col-xxl-9 col-xl-10 m-auto">
                 <h6 class="sub-heading"><?php the_sub_field('before_title'); ?></h6>
-                <h3 class="title fw-bold"><?php the_sub_field('title'); ?></h3>
+                <!-- <h3 class="title fw-bold"><?php //the_sub_field('title'); ?></h3> -->
+                <h2 class=" fw-bold pb-35 lg-pb-10 font-recoleta" ><?php the_sub_field('title'); ?></h2>
                 <?php the_content( ); ?>
                 <!-- <div class="border-block">
                     <h6 class="sub-heading">Project Process</h6>

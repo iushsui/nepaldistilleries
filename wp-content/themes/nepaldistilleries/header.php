@@ -9,7 +9,7 @@
 	<meta property="og:site_name" content="vCamp">
 	<meta property="og:url" content="https://heloshape.com/">
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Red Cherry">
+	<meta property="og:title" content="Nepal Distilleries">
 	<meta name='og:image' content='<?php echo get_stylesheet_directory_uri(); ?>/images/assets/ogg.png'>
 	<!-- For IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,7 +58,7 @@
 				Theme Main Menu
 			============================================== 
 			-->
-		<header class="theme-main-menu sticky-menu theme-menu-six ">
+		<header class="theme-main-menu sticky-menu theme-menu-six <?php echo (is_singular('news-events')) ? "white-vr" : ""; ?>">
 			<div class="inner-content">
 				<div class="d-flex align-items-center justify-content-between">
 

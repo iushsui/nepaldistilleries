@@ -9,16 +9,8 @@
     }
 ?>
 
-<?php
-    // if(have_rows()):
-    //     while(have_rows()):
-    //         the_row();
-?>
 
-<?php 
-    //     endwhile;
-    // endif;
-?>
+
 
 <!--
 =====================================================
@@ -38,10 +30,10 @@
                                 the_row();
                     ?>
 
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="card-style-eight">
-                            <div class="icon d-flex align-items-end"><?php the_sub_field('icon'); ?></div>
-                            <h4><?php the_sub_field('title'); ?></h4>
+                    <div class="col-lg-4 col-sm-6 d-flex align-items-stretch">
+                        <div class="card-style-eight text-center">
+                            <div class="icon d-flex align-items-end justify-content-center"><span class="fs-1" style="color: #9e1c20;"><?php the_sub_field('icon'); ?></span></div>
+                            <h4 class="fw-bold"><?php the_sub_field('title'); ?></h4>
                             <p><?php the_sub_field('description'); ?></p>
                         </div> <!-- /.card-style-eight -->
                     </div>                   
@@ -61,10 +53,10 @@
     Vcamp Feature Section Three
 ============================================== 
 -->
-<div class="vcamp-feature-section-three bg-light mt-160 lg-mt-120 p0">
-    <div class="container">
+<div class="vcamp-feature-section-three bg-light mt-100 lg-mt-120">
+    <!-- <div class="container"> -->
 
-        <div class="row pt-100 pb-100">
+        <div class="row pt-50 pb-60" style="padding-left: 50px; padding-right: 50px;">
 
             <?php
                 if(have_rows('opportunities')):
@@ -73,8 +65,8 @@
             ?>
 
             <div class="col-lg-4 col-sm-6">
-                <div class="card-style-eight bg-white">
-                    <h4><?php the_sub_field('title'); ?></h4>
+                <div class="card-style-eight bg-white text-center">
+                    <h4 class="fw-bold"><?php the_sub_field('title'); ?></h4>
                     <p><?php the_sub_field('description'); ?></p>
                     <a href="<?php the_sub_field('button_link'); ?>" class="theme-btn-eight ripple-btn"><?php the_sub_field('button_text'); ?></a>
 
@@ -88,7 +80,7 @@
         </div>
 
         
-    </div>
+    <!-- </div> -->
 </div> <!-- /.vcamp-feature-section-three -->
 
 
@@ -96,19 +88,32 @@
 <div class="vcamp-feature-section-eight mt-80 lg-mt-100 pb-5">
     <div class="container">
         <div class="row">
-            <h3 class="">Current Openings</h3>
+            <div class="col-xxl-11 m-auto">
+            <h2 class="title font-recoleta">Current Openings</h2>
+				<?php
+					if(have_rows('current_openings')):
+					    while(have_rows('current_openings')):
+					        the_row();
+				?>
             <div class="job pb-40 mt-50 border-bottom">
-                <h4>Job title</h4>
-                <p>Kathmandu | Full Time</p>
-                <a href="#" class="theme-btn-eight ripple-btn">Apply Now</a>
+                <h4 class="fw-bold"><?php the_sub_field('job_title'); ?></h4>
+                <p><?php the_sub_field('short_description'); ?></p>
+                <a href="<?php the_sub_field('apply_button_url'); ?>" class="theme-btn-four ripple-btn">Apply Now</a>
             </div>
+				
+				<?php 
+					    endwhile;
+					endif;
+				?>
 
-            <div class="job pb-50 mt-80 border-bottom">
+
+<!--             <div class="job pb-50 mt-80 border-bottom">
                 <h4>Job title</h4>
                 <p>Kathmandu | Full Time</p>
                 <a href="#" class="theme-btn-eight ripple-btn">Apply Now</a>
-            </div>
+            </div> -->
         </div>
+            </div>
     </div>
 </div>
 
@@ -119,7 +124,7 @@
 =====================================================
 -->
 <div class="fancy-banner-seven mt-40">
-    <div class="container">
+    <!-- <div class="container"> -->
         <div class="inner-content position-relative">
             <div class="row align-items-center">
                 <div class="col-xl-8 col-lg-9 text-center text-lg-start">
@@ -131,7 +136,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 </div> <!-- /.fancy-banner-seven -->
 
 

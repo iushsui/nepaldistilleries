@@ -60,21 +60,21 @@
                 <div class="address-block-three d-flex mb-80 lg-mb-40">
                     <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon/icon_17.svg" alt=""></div>
                     <div class="text">
-                        <h5 class="title">Our Address</h5>
+                        <h5 class="title fw-bold">Our Address</h5>
                         <p><?php echo $contact_details['address']; ?></p>
                     </div>
                 </div> <!-- /.address-block-three -->
                 <div class="address-block-three d-flex mb-80 lg-mb-40">
                     <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon/icon_18.svg" alt=""></div>
                     <div class="text">
-                        <h5 class="title">Contact Info</h5>
+                        <h5 class="title fw-bold">Contact Info</h5>
                         <p>Open a chat or give us call at <br><a href="tel:<?php echo $contact_details['phone_number']; ?>" class="call"><?php echo $contact_details['phone_number']; ?></a></p>
                     </div>
                 </div> <!-- /.address-block-three -->
                 <div class="address-block-three d-flex">
                     <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon/icon_19.svg" alt=""></div>
                     <div class="text">
-                        <h5 class="title">Live Support</h5>
+                        <h5 class="title fw-bold">Live Support</h5>
                         <p>Urgent go to live chat portal  <br><a href="#" class="webaddress"><?php echo $contact_details['email']; ?></a></p>
                     </div>
                 </div> <!-- /.address-block-three -->

@@ -3,14 +3,14 @@
     Portfolio Gallery Nine
 =====================================================
 -->
-<div class="portfolio-gallery-nine border-top mt-100 lg-mt-100 pt-50" data-aos="fade-up">
+<div class="portfolio-gallery-nine border-top mt-100 lg-mt-100 pt-100" data-aos="fade-up">
 <div class="container">
     <div class="row align-items-center justify-content-between">
-        <div class="col-xxl-5 col-xl-6 col-lg-5 col-md-7 col-sm-9">
-            <div class="title-style-thirteen text-center text-sm-start">
-                <h2 class="title fw-bold"><?php the_sub_field('heading'); ?></h2>
+        <!-- <div class="col-xxl-5 col-xl-6 col-lg-5 col-md-7 col-sm-9"> -->
+            <div class="title-style-thirteen text-sm-start">
+                <h2 class="font-recoleta fw-bold text-center"><?php the_sub_field('heading'); ?></h2>
             </div> <!-- /.title-style-thirteen -->
-        </div>
+        <!-- </div> -->
         <div class="col-md-5 col-sm-3 d-flex justify-content-center justify-content-sm-end">
             <ul class="slider-arrows d-flex style-none xs-mt-20">
                 <li class="prev_btn2 slick-arrow ripple-btn" style=""><i class="bi bi-arrow-left"></i></li>

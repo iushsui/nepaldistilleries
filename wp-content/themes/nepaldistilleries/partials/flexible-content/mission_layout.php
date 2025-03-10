@@ -9,8 +9,8 @@
             <div class="row align-items-center mb-80 lg-mb-40">
                 <div class="col-md-6">
                     <div class="title-style-thirteen">
-                        <h2 class="title fw-bold"><?php the_sub_field('heading'); ?></h2><br>
-                    <p class="theme-mb-0 sm-mt-20"><?php the_sub_field('sub_heading'); ?></p>
+                        <h2 class="fw-bold font-recoleta"><?php the_sub_field('heading'); ?></h2><br>
+                        <p class="theme-mb-0 sm-mt-20 font-cinzel-rg"><?php the_sub_field('sub_heading'); ?></p>
 
                     </div>
                 </div>

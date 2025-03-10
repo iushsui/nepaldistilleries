@@ -3,7 +3,7 @@
     Inside Page Banner
 ============================================== 
 -->
-<!-- <div class="inside-hero-two hero-spacing" style="background-image: url(<?php the_sub_field('background_image'); ?>);">
+<!-- <div class="inside-hero-two hero-spacing" style="background-image: url(<?php //the_sub_field('background_image'); ?>);">
     <div class="container">
         <h2 class="page-title"><?php //the_sub_field('title'); ?></h2>
         <p><?php //the_sub_field('sub_title'); ?></p>
@@ -15,7 +15,7 @@
 
 <div class="inside-hero-one hero-spacing">
     <div class="container">
-        <h2 class="page-title"><?php the_sub_field('title'); ?></h2>
+        <h2 class="page-title font-recoleta"><?php the_sub_field('title'); ?></h2>
         <p><?php the_sub_field('sub_title'); ?></p>
     </div>
 </div> <!-- /.inside-hero-one -->

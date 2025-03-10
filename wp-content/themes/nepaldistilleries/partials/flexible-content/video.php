@@ -8,10 +8,17 @@
     style="background-image:url('<?php the_sub_field('cover_image'); ?>')">
     <div class="inner-content h-100 position-relative d-flex align-items-center justify-content-center">
         <?php 
-			$video = get_sub_field('video_link', false, false); 
-            $video = array_shift(explode('&', $video));
-				// var_dump($video);
+			// $video = get_sub_field('video_link', false, false); 
+            // $video = array_shift(explode('&', $video));
+			// 	// var_dump($video);
 		?>
+        <?php 
+            $video = get_sub_field('video_link', false, false);
+            $video_parts = explode('&', $video);
+            $video = array_shift($video_parts);
+            // var_dump($video);
+        ?>
+
         <a class="fancybox video-icon d-flex align-items-center justify-content-center" data-fancybox=""
             href="<?= $video ?>" tabindex="0">
             <i class="bi bi-play-fill"></i>
